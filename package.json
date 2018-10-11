@@ -1,13 +1,14 @@
 {
   "name": "@hyke/core",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "keywords": [],
   "main": "dist/core.umd.js",
   "module": "dist/core.es5.js",
   "typings": "dist/types/core.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "templates"
   ],
   "author": "Luka Klacar <lukaklacar@gmail.com>",
   "repository": {
