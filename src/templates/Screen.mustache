@@ -1,0 +1,31 @@
+import * as React from "react";
+import {StyleSheet, Text, View, ViewStyle} from "react-native";
+import {connect} from "react-redux";
+import StoreState from "../types/StoreState";
+import {bindActionCreators, Dispatch} from "redux";
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    } as ViewStyle
+});
+
+interface Props {
+}
+
+class {{ screenName }}Screen extends React.Component<Props> {
+    render() {
+        return <View style={styles.container}>
+        </View>
+    }
+}
+
+const mapState = (state: StoreState) => ({
+});
+
+const mapDispatch = (dispatch: Dispatch) => bindActionCreators({
+    },
+    dispatch
+);
+
+export default connect(mapState, mapDispatch)({{ screenName }}Screen);

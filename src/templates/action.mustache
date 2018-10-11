@@ -1,0 +1,11 @@
+export enum ActionTypes {
+    {{ actionNameUpperUnderscore }} = '{{ actionNameUpperUnderscore }}'
+}
+
+export const {{ actionNameLowerCamelCase }} = (id: number) => ({
+    type: ActionTypes.{{ actionNameUpperUnderscore }},
+    payload: id,
+});
+
+
+export type {{ actionNameUpperCamelCase }} = typeof {{ actionNameLowerCamelCase }};

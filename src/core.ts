@@ -1,5 +1,17 @@
-// Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
-// import "core-js/fn/array.find"
-// ...
+import actionCommand from './commands/actionCommand'
+import newApplicationCommand from './commands/newApplicationCommand'
+import reducerCommand from './commands/reducerCommand'
+import screenCommand from './commands/screenCommand'
+import stateCommand from './commands/stateCommand'
+import statelessComponentCommand from './commands/statelessComponentCommand'
+import statefulComponentCommand from './commands/statefulComponentCommand'
 
-export default class DummyClass {}
+export {
+  actionCommand,
+  newApplicationCommand,
+  reducerCommand,
+  screenCommand,
+  stateCommand,
+  statefulComponentCommand,
+  statelessComponentCommand
+}
