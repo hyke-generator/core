@@ -2,4 +2,4 @@
 // import "core-js/fn/array.find"
 // ...
 
-export default class DummyClass {}
+export default ['Generator 1', 'Generator 2']
