@@ -1,6 +1,6 @@
 {
   "name": "@hyke/core",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "keywords": [],
   "main": "dist/core.umd.js",
@@ -126,7 +126,6 @@
     "camelcase": "^5.0.0",
     "chalk-animation": "^1.6.0",
     "decamelize": "^2.0.0",
-    "mv": "^2.1.1",
     "require-text": "^0.0.1",
     "uppercamelcase": "^3.0.0",
     "yargs": "^12.0.2"
