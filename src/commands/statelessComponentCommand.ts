@@ -12,7 +12,7 @@ const componentGenerator: TemplateGenerator<IComponentGeneratorArgs> = buildTemp
 >({
   outputDirectory: './src/components',
   fileExtension: 'tsx',
-  templatePath: '@hyke/core/templates/StatelessComponent.mustache'
+  templatePath: 'core/templates/StatelessComponent.mustache'
 })
 
 const statelessComponentCommand = {

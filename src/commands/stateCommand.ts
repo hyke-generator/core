@@ -12,7 +12,7 @@ const stateGenerator: TemplateGenerator<IStateGeneratorArgs> = buildTemplateGene
 >({
   outputDirectory: './src/types',
   fileExtension: 'ts',
-  templatePath: '@hyke/core/templates/state.mustache'
+  templatePath: 'core/templates/state.mustache'
 })
 
 const stateCommand = {

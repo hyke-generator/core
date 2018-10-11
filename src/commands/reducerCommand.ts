@@ -12,7 +12,7 @@ const reducerGenerator: TemplateGenerator<IReducerGeneratorArgs> = buildTemplate
 >({
   outputDirectory: './src/reducers',
   fileExtension: 'ts',
-  templatePath: '@hyke/core/templates/reducer.mustache'
+  templatePath: 'core/templates/reducer.mustache'
 })
 
 const reducerCommand = {
