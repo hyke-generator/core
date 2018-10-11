@@ -88,6 +88,7 @@
     "@types/decamelize": "^1.2.0",
     "@types/es6-promise": "^3.3.0",
     "@types/jest": "^23.3.2",
+    "@types/mv": "^2.1.0",
     "@types/node": "^10.11.0",
     "@types/uppercamelcase": "^3.0.0",
     "@types/yargs": "^12.0.1",
@@ -125,6 +126,7 @@
     "camelcase": "^5.0.0",
     "chalk-animation": "^1.6.0",
     "decamelize": "^2.0.0",
+    "mv": "^2.1.1",
     "require-text": "^0.0.1",
     "uppercamelcase": "^3.0.0",
     "yargs": "^12.0.2"
