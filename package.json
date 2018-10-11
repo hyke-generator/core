@@ -1,6 +1,6 @@
 {
   "name": "@hyke/core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "keywords": [],
   "main": "dist/core.umd.js",
@@ -123,7 +123,9 @@
   "dependencies": {
     "@hyke/sdk": "^1.0.5",
     "camelcase": "^5.0.0",
+    "chalk-animation": "^1.6.0",
     "decamelize": "^2.0.0",
+    "require-text": "^0.0.1",
     "uppercamelcase": "^3.0.0",
     "yargs": "^12.0.2"
   }
