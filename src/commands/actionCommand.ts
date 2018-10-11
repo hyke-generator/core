@@ -1,6 +1,6 @@
-import camelcase from 'camelcase'
-import decamelize from 'decamelize'
-import uppercamelcase from 'uppercamelcase'
+const camelcase = require('camelcase')
+const decamelize = require('decamelize')
+const uppercamelcase = require('uppercamelcase')
 import { Arguments, Argv, CommandModule } from 'yargs'
 import buildTemplateGenerator from '../builders/TemplateGeneratorBuilder'
 import { ITemplateGeneratorArgs, TemplateGenerator } from '@hyke/sdk'

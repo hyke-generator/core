@@ -1,4 +1,4 @@
-import camelcase from 'camelcase'
+const camelcase = require('camelcase')
 import { Arguments, Argv, CommandModule } from 'yargs'
 import buildTemplateGenerator from '../builders/TemplateGeneratorBuilder'
 import { TemplateGenerator, ITemplateGeneratorArgs } from '@hyke/sdk'

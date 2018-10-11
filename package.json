@@ -1,6 +1,6 @@
 {
-  "name": "core",
-  "version": "0.0.0",
+  "name": "@hyke/core",
+  "version": "1.0.1",
   "description": "",
   "keywords": [],
   "main": "dist/core.umd.js",
@@ -9,7 +9,7 @@
   "files": [
     "dist"
   ],
-  "author": "Luka Klacar <l.klacar@vegaitsourcing.rs>",
+  "author": "Luka Klacar <lukaklacar@gmail.com>",
   "repository": {
     "type": "git",
     "url": ""
@@ -86,6 +86,7 @@
     "@commitlint/config-conventional": "^7.1.2",
     "@types/camelcase": "^4.1.0",
     "@types/decamelize": "^1.2.0",
+    "@types/es6-promise": "^3.3.0",
     "@types/jest": "^23.3.2",
     "@types/node": "^10.11.0",
     "@types/uppercamelcase": "^3.0.0",

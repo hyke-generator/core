@@ -1,4 +1,4 @@
-import upperCamelCase from 'uppercamelcase'
+const upperCamelCase = require('uppercamelcase')
 import { Arguments, Argv, CommandModule } from 'yargs'
 import buildTemplateGenerator from '../builders/TemplateGeneratorBuilder'
 import { TemplateGenerator, ITemplateGeneratorArgs } from '@hyke/sdk'

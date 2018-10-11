@@ -1,5 +1,5 @@
 import { Arguments, Argv, CommandModule } from 'yargs'
-import NewApplicationGenerator from '../../../cli/src/generators/new/NewApplicationGenerator'
+import NewApplicationGenerator from '../new/NewApplicationGenerator'
 
 const newApplicationGenerator = new NewApplicationGenerator()
 
