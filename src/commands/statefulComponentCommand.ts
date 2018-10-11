@@ -12,7 +12,7 @@ const statefulComponentGenerator: TemplateGenerator<
 > = buildTemplateGenerator<IComponentGeneratorArgs>({
   outputDirectory: './src/components',
   fileExtension: 'tsx',
-  templatePath: 'templates/StatefulComponent.mustache'
+  templatePath: '@hyke/core/templates/StatefulComponent.mustache'
 })
 
 const statefulComponentCommand = {

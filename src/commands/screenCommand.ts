@@ -12,7 +12,7 @@ const screenGenerator: TemplateGenerator<IScreenGeneratorArgs> = buildTemplateGe
 >({
   outputDirectory: './src/screens',
   fileExtension: 'tsx',
-  templatePath: 'templates/Screen.mustache'
+  templatePath: '@hyke/core/templates/Screen.mustache'
 })
 
 const screenCommand = {

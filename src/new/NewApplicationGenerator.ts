@@ -11,7 +11,7 @@ interface IArgs {
 export default class NewApplicationGenerator extends BaseGenerator<IArgs> {
   public generate(args: IArgs): void {
     chalkAnimation.rainbow('Generating React Native application. Please wait...')
-    execute('node', ['react-native', 'init', args.appName, '--template', 'hike'], {}, args.verbose)
+    execute('react-native', ['init', args.appName, '--template', 'hike'], {}, args.verbose)
       .then(() => execute('node', [`${args.appName}/setup.js`], {}, args.verbose))
       .then(() => console.log(chalk.green('Application successfully generated.')))
       .catch(() => {

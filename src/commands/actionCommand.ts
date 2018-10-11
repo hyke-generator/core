@@ -16,7 +16,7 @@ const actionGenerator: TemplateGenerator<IComponentGeneratorArgs> = buildTemplat
 >({
   outputDirectory: './src/actions',
   fileExtension: 'ts',
-  templatePath: 'templates/action.mustache'
+  templatePath: '@hyke/core/templates/action.mustache'
 })
 
 const actionCommand = {
