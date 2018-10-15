@@ -72,7 +72,7 @@ const apiCommand = {
     apiActionGenerator.generate({
       fileName: camelcase(modelName),
       modelName: uppercamelcase(modelName),
-      modelNameCapital: decamelize(modelName)
+      modelNameCapital: decamelize(modelName).toUpperCase()
     })
 
     apiModelGenerator.generate({
@@ -83,7 +83,7 @@ const apiCommand = {
     apiReducerGenerator.generate({
       fileName: camelcase(modelName),
       modelName: uppercamelcase(modelName),
-      modelNameCapital: decamelize(modelName),
+      modelNameCapital: decamelize(modelName).toUpperCase(),
       modelNameLower: camelcase(modelName)
     })
 
