@@ -1,6 +1,6 @@
 {
   "name": "@hyke/core",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "",
   "keywords": [],
   "main": "dist/core.umd.js",
