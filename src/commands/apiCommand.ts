@@ -70,25 +70,25 @@ const apiCommand = {
     const modelName = args.ModelName
 
     apiActionGenerator.generate({
-      fileName: camelcase(modelName),
+      fileName: `${camelcase(modelName)}Actions`,
       modelName: uppercamelcase(modelName),
       modelNameCapital: decamelize(modelName).toUpperCase()
     })
 
     apiModelGenerator.generate({
-      fileName: camelcase(modelName),
+      fileName: uppercamelcase(modelName),
       modelName: uppercamelcase(modelName)
     })
 
     apiReducerGenerator.generate({
-      fileName: camelcase(modelName),
+      fileName: `${camelcase(modelName)}Reducer`,
       modelName: uppercamelcase(modelName),
       modelNameCapital: decamelize(modelName).toUpperCase(),
       modelNameLower: camelcase(modelName)
     })
 
     apiServiceGenerator.generate({
-      fileName: camelcase(modelName),
+      fileName: `${uppercamelcase(modelName)}Service`,
       modelName: uppercamelcase(modelName)
     })
   }

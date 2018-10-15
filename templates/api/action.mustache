@@ -1,12 +1,12 @@
 import {{modelName}}Service from "../services/{{modelName}}Service";
 
-export enum TodoActionsTypes {
+export enum {{modelName}}ActionsTypes {
   FETCH_{{modelNameCapital}} = 'FETCH_{{modelNameCapital}}'
 }
 
 export const fetch{{modelName}} = (id: number) => ({
-  type: TodoActionsTypes.FETCH_{{modelNameCapital}},
-  payload: TodoService.fetchTodo(id),
+  type: {{ modelName }}ActionsTypes.FETCH_{{modelNameCapital}},
+  payload: {{ modelName }}Service.fetch{{ modelName }}(id),
 });
 
 
