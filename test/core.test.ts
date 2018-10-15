@@ -1,14 +1,7 @@
-import DummyClass from '../src/core'
+import * as core from '../src/core'
 
-/**
- * Dummy test
- */
-describe('Dummy test', () => {
-  it('works if true is truthy', () => {
-    expect(true).toBeTruthy()
-  })
-
-  it('DummyClass is instantiable', () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
+describe('Core test', () => {
+  it('Core is an object', () => {
+    expect(typeof core).toBe('object')
   })
 })

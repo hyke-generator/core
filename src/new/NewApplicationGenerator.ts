@@ -4,7 +4,6 @@ import chalkAnimation from 'chalk-animation'
 import { BaseGenerator, execute } from '@hyke/sdk'
 import * as path from 'path'
 import * as fs from 'fs'
-import { PathLike } from 'fs'
 
 const { exec } = require('child_process')
 
@@ -13,7 +12,7 @@ interface IArgs {
   verbose: boolean
 }
 
-export function readFile(path: PathLike): Promise<string> {
+export function readFile(path: fs.PathLike): Promise<string> {
   return new Promise<string>((resolve, reject) => {
     if (!fs.existsSync(path)) {
       reject(new Error('File does not exist'))
@@ -72,7 +71,7 @@ export default class NewApplicationGenerator extends BaseGenerator<IArgs> {
       .then(() => {
         return console.log(chalk.green('Application successfully generated.'))
       })
-      .catch(err => {
+      .catch(() => {
         console.log(chalk.red('Error while generating React Native application.'))
       })
   }
