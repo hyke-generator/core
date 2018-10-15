@@ -1,0 +1,29 @@
+import typeToReducer from 'type-to-reducer';
+import {{ modelName }}State from "../types/{{ modelName }}State";
+{{=<% %>=}}
+  import { <% modelName %> Action, <% modelName %>ActionsTypes} from "../actions/<% modelNameLower %>Actions";
+<%={{ }}=%>
+
+
+export const {{ modelNameLower }}Reducer = typeToReducer({
+  [{{ modelName }}ActionsTypes.FETCH_{{ modelNameCapital }}]: {
+    PENDING: (state: {{ modelName }}State, action: ReturnType<{{ modelName }}Action>): {{ modelName }}State => ({
+      isFulfilled: false,
+      loading: true,
+      data: undefined,
+      isRejected: false
+    }),
+    REJECTED: (state: {{ modelName }}State, action: ReturnType<{{ modelName }}Action>): {{ modelName }}State => ({
+      data: undefined,
+      loading: false,
+      isFulfilled: false,
+      isRejected: true,
+    }),
+    FULFILLED: (state: {{ modelName }}State, action: ReturnType<{{ modelName }}Action>): {{ modelName }}State => ({
+      data: action.payload,
+      loading: false,
+      isFulfilled: true,
+      isRejected: false,
+    }),
+  }
+}, {counterValue: 0});

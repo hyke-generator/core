@@ -1,0 +1,14 @@
+import {{modelName}}Service from "../services/{{modelName}}Service";
+
+export enum TodoActionsTypes {
+  FETCH_{{modelNameCapital}} = 'FETCH_{{modelNameCapital}}'
+}
+
+export const fetch{{modelName}} = (id: number) => ({
+  type: TodoActionsTypes.FETCH_{{modelNameCapital}},
+  payload: TodoService.fetchTodo(id),
+});
+
+
+export type Fetch{{modelName}}Action = typeof fetch{{modelName}};
+export type {{modelName}}Action = Fetch{{modelName}}Action;

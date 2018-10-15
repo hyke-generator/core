@@ -1,0 +1,13 @@
+import axios, {AxiosResponse} from 'axios';
+import {{ modelName }} from "../models/{{ modelName }}";
+
+class {{ modelName }}Service {
+public static fetchTodo(id: number): Promise<{{ modelName }}Todo> {
+    return axios
+      .get(`https://jsonplaceholder.typicode.com/todos/${id}`)
+      .then((res: AxiosResponse) => res.data as {{ modelName }}Todo)
+}
+
+}
+
+export default {{ modelName }}Service;

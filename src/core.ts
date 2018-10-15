@@ -5,6 +5,7 @@ import screenCommand from './commands/screenCommand'
 import stateCommand from './commands/stateCommand'
 import statelessComponentCommand from './commands/statelessComponentCommand'
 import statefulComponentCommand from './commands/statefulComponentCommand'
+import apiCommand from './commands/apiCommand'
 
 export {
   actionCommand,
@@ -13,5 +14,6 @@ export {
   screenCommand,
   stateCommand,
   statefulComponentCommand,
-  statelessComponentCommand
+  statelessComponentCommand,
+  apiCommand
 }
