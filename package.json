@@ -98,7 +98,7 @@
     "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "cz-conventional-changelog": "^2.1.0",
-    "husky": "^1.0.1",
+    "husky": "^1.1.2",
     "jest": "^23.6.0",
     "jest-config": "^23.6.0",
     "lint-staged": "^7.3.0",
@@ -130,5 +130,10 @@
     "require-text": "^0.0.1",
     "uppercamelcase": "^3.0.0",
     "yargs": "^12.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
