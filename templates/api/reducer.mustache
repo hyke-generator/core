@@ -10,17 +10,17 @@ export const {{ modelNameLower }}Reducer = typeToReducer({
     PENDING: (state: {{ modelName }}State, action: ReturnType<{{ modelName }}Action>): {{ modelName }}State => ({
       isFulfilled: false,
       loading: true,
-      data: undefined,
+      {{ modelNameLower }}: undefined,
       isRejected: false
     }),
     REJECTED: (state: {{ modelName }}State, action: ReturnType<{{ modelName }}Action>): {{ modelName }}State => ({
-      data: undefined,
+      {{ modelNameLower }}: undefined,
       loading: false,
       isFulfilled: false,
       isRejected: true,
     }),
     FULFILLED: (state: {{ modelName }}State, action: ReturnType<{{ modelName }}Action>): {{ modelName }}State => ({
-      data: action.payload,
+      {{ modelNameLower }}: action.payload,
       loading: false,
       isFulfilled: true,
       isRejected: false,

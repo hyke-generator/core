@@ -1,0 +1,8 @@
+import {{ modelName }} from '../models/{{ modelName }}'
+
+export default interface {{ modelName }}State {
+  {{ modelNameLower }}?: {{ modelName }} | Promise<{{ modelName }}>;
+  loading: boolean;
+  isFulfilled: boolean;
+  isRejected: boolean;
+}

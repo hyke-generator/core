@@ -24,6 +24,11 @@ interface IApiServiceGeneratorArgs extends ITemplateGeneratorArgs {
   modelName: string
 }
 
+interface IApiStateGeneratorArgs extends ITemplateGeneratorArgs {
+  modelName: string
+  modelNameLower: string
+}
+
 const apiActionGenerator: TemplateGenerator<IApiActionGeneratorArgs> = buildTemplateGenerator<
   IApiActionGeneratorArgs
 >({
@@ -54,6 +59,14 @@ const apiServiceGenerator: TemplateGenerator<IApiServiceGeneratorArgs> = buildTe
   outputDirectory: './src/services',
   fileExtension: 'ts',
   templatePath: 'core/templates/api/service.mustache'
+})
+
+const apiStateGenerator: TemplateGenerator<IApiStateGeneratorArgs> = buildTemplateGenerator<
+  IApiStateGeneratorArgs
+>({
+  outputDirectory: './src/types',
+  fileExtension: 'ts',
+  templatePath: 'core/templates/api/state.mustache'
 })
 
 const apiCommand = {
@@ -90,6 +103,12 @@ const apiCommand = {
     apiServiceGenerator.generate({
       fileName: `${uppercamelcase(modelName)}Service`,
       modelName: uppercamelcase(modelName)
+    })
+
+    apiStateGenerator.generate({
+      fileName: `${uppercamelcase(modelName)}State`,
+      modelName: uppercamelcase(modelName),
+      modelNameLower: camelcase(modelName)
     })
   }
 } as CommandModule
