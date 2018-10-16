@@ -16,7 +16,7 @@ const screenGenerator: TemplateGenerator<IScreenGeneratorArgs> = buildTemplateGe
 const screenCommand = {
     command: "screen <ScreenName>",
     aliases: ["s"],
-    describe: "Add new scree",
+    describe: "Add new screen",
     builder: (yargs: Argv) => {
         return yargs.positional("ScreenName", {
             describe: "Screen name",
